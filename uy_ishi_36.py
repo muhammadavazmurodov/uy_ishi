@@ -1,7 +1,7 @@
 class MyDate:
     MONTHS = [
         "Yanvar", "Fevral", "Mart", "Aprel", "May", "Iyun",
-        "Iyun", "Avgust", "Sentabr", "Oktabr", "Noyabr", "Dekabr"
+        "Iyul", "Avgust", "Sentyabr", "Oktyabr", "Noyabr", "Dekabr"
     ]
     
     DAY_IN_MONTHS = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
@@ -90,7 +90,7 @@ class MyDate:
             self.__month = new_month
             self.__year = new_year
         else:
-            raise ValueError("Oy o'zgartirib bo'lmadi")
+            raise ValueError("Oyni o'zgartirib bo'lmadi")
         return self
 
     def previousMonth(self):
@@ -108,7 +108,7 @@ class MyDate:
             self.__month = new_month
             self.__year = new_year
         else:
-            raise ValueError("Oy o'zgartirib bo'lmadi")
+            raise ValueError("Oyni o'zgartirib bo'lmadi")
         return self
 
     def nextYear(self):
@@ -121,7 +121,7 @@ class MyDate:
             self.__day = new_day
             self.__year = new_year
         else:
-            raise ValueError("Yil o'zgartirib bo'lmadi")
+            raise ValueError("Yilni o'zgartirib bo'lmadi")
         return self
 
     def previousYear(self):
@@ -134,7 +134,7 @@ class MyDate:
             self.__day = new_day
             self.__year = new_year
         else:
-            raise ValueError("Yil o'zgartirib bo'lmadi")
+            raise ValueError("Yilni o'zgartirib bo'lmadi")
         return self
 
     def __str__(self):
@@ -144,3 +144,4 @@ sana = MyDate(28, 2, 2012)
 print("Boshlang'ich sana:", sana)
 sana.nextDay()
 print("Keyingi kun:", sana)
+

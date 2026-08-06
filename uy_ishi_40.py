@@ -56,7 +56,7 @@ class RestoranlarDB:
 
     def bir(self):
         self.c.execute("SELECT name FROM restoranlar WHERE name LIKE 'M%%r' ORDER BY maxFoodPrice")
-        print("\n1. M...R va o'sish tartibida:", self.c.fetchall())
+        print("\n1. M...r va o'sish tartibida:", self.c.fetchall())
 
     def ikki(self):
         self.c.execute("SELECT name FROM restoranlar ORDER BY minFoodPrice LIMIT 3")
